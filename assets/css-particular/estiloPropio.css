@@ -1,0 +1,127 @@
+.obligatorio {
+    padding: 1em 0;
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+    background-color: white;
+}
+.inpright {
+    display: inline-block;
+    margin-left: 35%;
+}
+.inpleft {
+    float: right;
+    margin-right: 15%;
+}
+.mbr-header__text {
+    text-shadow: 0px 0px 4px white;
+}
+.form-control, input, textarea, button[type="submit"] {
+    background-color: rgba(238, 242, 245, 0.62)!important;
+}
+button[type="submit"]:hover {
+    background-color: black!important;
+}
+input[type="radio"]:checked + span, input[type="checkbox"]:checked + span {
+    color: black;
+    font-weight: 450;
+    background-color: white;
+}
+input[type="radio"], input[type="checkbox"] {
+    position: relative;
+    top: .2em;
+    margin-right: .3em;
+    outline: 0 solid transparent;
+}
+input[type="radio"] ~ span:after {
+    content: "\00a0 \00a0 \00a0 \00a0";
+}
+input[type="date"] {
+    width: 55%;
+    margin-left: 45%;
+    text-align: right;
+}
+input[type="date"]:before {
+    content: "Introduzca su fecha de nacimiento: \00a0 \00a0";
+    color: black;
+}
+textarea {
+    resize: none;
+    color: black;
+}
+input[value="semanal"]: {
+    margin-left: 20%;
+}
+input[required], .oblig .form-control {
+    border: 2px solid #f80101;
+}
+input[required]:focus, .oblig .form-control:active, #preguntas:focus {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearence: none;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    text-align: right;
+}
+::-webkit-input-placeholder {
+   color: black!important;
+}
+:-moz-placeholder {
+   color: black!important;
+}
+::-moz-placeholder {
+   color: black!important;
+}
+:-ms-input-placeholder {
+   color: black!important;
+}
+
+@media screen and (max-width:1000px) {
+    button[type="submit"] {
+        margin: 1.5em auto 0!important;
+    }
+    input[type="date"] {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .inpright {
+        display: inline-block;
+        margin-left: 15%;
+    }
+    .inpleft {
+        float: right;
+        margin-right: 5%;
+    }
+    input[type="radio"] ~ span {
+        display: inline-block;
+        min-width: 45%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .inpright, .inpleft {
+        display: block;
+        margin: 0 30%;
+        float: none;
+    }
+}
+
+@media screen and (max-width:619px) {
+    input[type="radio"] {
+        margin-left: 28%;
+    }
+    input[type="radio"] ~ span:after {
+        content: "\A";
+        white-space: pre;
+    }
+    button[type="submit"] {
+        width: 100%;
+    }
+}

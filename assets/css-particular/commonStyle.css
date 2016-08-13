@@ -1,0 +1,18 @@
+.mbr-hamburger--open {
+    color: white!important;
+}
+
+@media screen and (max-width:1200px) {
+    .mbr-navbar__item {
+        width: 24%;
+        text-align: left;
+        font-size: .6em;
+    }
+    .mbr-navbar__item a {
+       float: right;
+    }
+    .mbr-navbar__item:nth-child(2) {
+        margin-right: 2em;
+    }
+}
+
